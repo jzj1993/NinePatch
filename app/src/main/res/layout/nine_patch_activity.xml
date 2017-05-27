@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/padding_divider_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:showDividers="middle"
+        tools:ignore="ContentDescription">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nine_patch_text_bubble"
+            android:text="基础示例"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nine_patch_text_bubble"
+            android:text="多行文本示例\n多行文本示例\n多行文本示例"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nine_patch_text_bubble"
+            android:padding="30dp"
+            android:text="代码设置Padding"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nine_patch_scale"
+            android:gravity="center"
+            android:text="椭圆形状"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nine_patch_round"
+            android:gravity="center"
+            android:text="纵向不拉伸时是半圆，代码设置Gravity居中"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nine_patch_round"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="文字过高时\n会变成圆角"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nine_patch_multi_stretchable"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="多个缩放区域会按比例均匀缩放\n这里箭头左右黑色像素点数是2:1"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nine_patch_no_padding_lines"
+            android:gravity="center"
+            android:text="没有定义\n内容区域"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fitXY:"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#F8F8F8"
+            android:scaleType="fitXY"
+            android:src="@drawable/nine_patch_round"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fitCenter:"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#F8F8F8"
+            android:scaleType="fitCenter"
+            android:src="@drawable/nine_patch_round"/>
+
+    </LinearLayout>
+</ScrollView>
